@@ -53,11 +53,6 @@ Composer descargará TCPDF y creará:
       - composer.lock
 
 ===================================
-CUARTA PARTE: PROBAR TCPDF EN PHP
-===================================
-
-
-===================================
 NOTAS FINALES:
 ===================================
 
@@ -66,3 +61,4 @@ NOTAS FINALES:
 - TCPDF es útil para generar tickets, facturas, reportes, etc.
 
 Fin de la guía 🎉
+
