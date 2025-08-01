@@ -1,0 +1,68 @@
+GUÍA PASO A PASO PARA INSTALAR COMPOSER Y TCPDF EN WINDOWS
+
+===================================
+PRIMERA PARTE: INSTALAR COMPOSER
+===================================
+
+1. ENTRA A LA PÁGINA:
+   https://getcomposer.org/download/
+
+2. DESCARGA EL INSTALADOR:
+    COMPOSER
+
+3. EJECUTA EL INSTALADOR:
+   - Marca la opción: "Add Composer to the PATH"
+   - Selecciona la ruta de php.exe (según tu instalación)
+     Ejemplos:
+       - AppServ: C:\AppServ\php8\php.exe
+       - XAMPP:   C:\xampp\php\php.exe
+
+4. VERIFICA LA INSTALACIÓN:
+   - Abre CMD (Tecla Windows + R → escribe "cmd" → Enter)
+   - Escribe:
+     composer --version
+   - Si ves algo como "Composer version 2.x.x", está listo ✅
+
+
+===================================
+SEGUNDA PARTE: PROYECTO Y CARPETA
+===================================
+
+5. CREA UNA CARPETA PARA TU PROYECTO
+   Ejemplo:
+   C:\AppServ\www\sol <--- use la ruta donde tenemos el proyecto
+
+   (Ahí se instalará la carpeta "vendor" y estará tu proyecto PHP)
+
+
+===================================
+TERCERA PARTE: INSTALAR TCPDF
+===================================
+
+6. ABRE LA TERMINAL EN LA CARPETA DEL PROYECTO
+   - Entra a la carpeta "sol"
+   - Haz Shift + clic derecho en un espacio vacío
+   - Selecciona: "Abrir ventana de PowerShell aquí"
+ o simplemente en la pestaña /view/terminal
+
+7. EJECUTA EL COMANDO:
+   composer require tecnickcom/tcpdf
+Composer descargará TCPDF y creará:
+      - vendor/
+      - composer.json
+      - composer.lock
+
+===================================
+CUARTA PARTE: PROBAR TCPDF EN PHP
+===================================
+
+
+===================================
+NOTAS FINALES:
+===================================
+
+- NO borres la carpeta "vendor" ni composer.json.
+- Composer requiere internet para descargar librerías.
+- TCPDF es útil para generar tickets, facturas, reportes, etc.
+
+Fin de la guía 🎉
